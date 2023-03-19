@@ -1,13 +1,20 @@
-debian:
-	apt install -y python3 python3-pip
-	pip3 install -r requirements.txt --user
+define USAGE
 
-fedora:
-	dnf install -y python3 python3-pip
-	pip3 install -r requirements.txt --user 
+Commands:
+init      Install Python dependencies with pipenv
+test      Run linters, test db migrations and tests.
+serve     Run app in dev environment.
+endef
+export USAGE
+help:
+@echo "$$USAGE"
 
-install:
-	pip3 install -r requirements.txt --user
-
-run:
-	python3 app.py
+init:
+pip3 install pipenv
+pipenv install --dev --skip-lock
+pip install flask==2.0.0
+pip install Werkzeug~=2.0.0
+pip install jinja2~=3.0.3
+pip install Flask-SQLAlchemy==2.4.4
+serve:
+FLASK_APP=app.py pipenv run flask run
