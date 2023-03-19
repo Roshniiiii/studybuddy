@@ -19,6 +19,9 @@ In the future, this can be extended by incorporating more features like:
 * Manage categories and limit them
 * Providing a search option to search through topics and replies
 
+## Link to replit
+https://replit.com/@RoshniVittanala/studybuddy
+
 ## Why I made it
 
 I made this forum as part of JC-1 Computing project to apply client side (HTML5) and server side (Python) concepts.
