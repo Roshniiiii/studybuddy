@@ -1,4 +1,4 @@
-# StudyBuddy Forum (Conceptulaised by Roshni Vittanala - Anderson Junior College - Singapore - 2023)
+# StudyBuddy Forum 
 
 This is a simple forum web application built in Flask framework in Python.
 The idea is for students to interact with each other mainly to get help on different study topics.
