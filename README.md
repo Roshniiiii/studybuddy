@@ -1,7 +1,7 @@
 # StudyBuddy Forum 
 
 This is a simple forum web application built in Flask framework in Python.
-The idea is for students to interact with each other mainly to get help on different study topics.
+The idea is for students of asrjc to interact with each other on an online platform dedicated to making learning efficient. They can do this by either posting a question related to their lessons in asrjc or answering a question posted by other students in asrjc. This way, not only can students clarify their doubts quickly, they can also revise and help others at the same time by answering questions posted by other students.
 
 ## Features
 
