@@ -1,53 +1,107 @@
-{% extends "base.html" %}
 {% block content %}
    <html>
+   <head>
+  <title>Study Buddy</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
 <style>
+            .my-custom-row {
+    background-color: teal;
+    text-align: center;
+    font-family: Fantasy, sans-serif;
+    font-size: xx-large;
+    color: #f0f8ff;
+
+  }
+
+
 body {
     background-color: white;
 }
 
+.my-custom-row {
+    background-color: teal;
+    text-align: center;
+    font-family: Fantasy, sans-serif;
+    font-size: xx-large;
+    color: #f0f8ff;
+
+  }
+
+  .col-sm-6:nth-child(1) {
+    background-color: orange;
+  }
+
+  .col-sm-6:nth-child(2) {
+    background-color: orange;
+  }
+
+  .col-sm-6:nth-child(3) {
+    background-color: orange;
+  }
+  .col-sm-6:nth-child(4) {
+    background-color: orange;
+
+  }
+
+  .col-sm-6:nth-child(5) {
+    background-color: orange;
+  }
+
+  .col-sm-6:nth-child(6) {
+    background-color: orange;
+  }
+
 </style>
 <body>
 
-
 <table  width="100%" >
-
-<tr>
+  <tr>
 
     <td width="100%" style="text-align:center;" >
         <a target="_blank" href="https://asrjc.moe.edu.sg/" rel="noopener">
-            <img src="Logo-1.png" width="384" height="120" alt="" /></a>
+            <img src="/static/Logo-1.png" width="384" height="120" alt="" /></a>
             &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
              &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <img src="study_buddy.png" height="100" />
+            <img src="/static/study_buddy.png" height="100" />
     </td>
 </tr>
 <tr>
-    <td width="100%" height="15" style="background-color:teal;" ></td>
+    <td width="100%" height="30" style="background-color:teal;" ><div class="my-custom-row">
+Study Buddy
+</div></td>
  </tr>
-
-<tr >
-   <td style="text-align:center; vertical-align:middle;"> <br><br>
-    <form action='/login/post' method="post">
-	<p style="color:#EA5F25; font-style:normal; font-size:15px;">
-	    <b>Username: </b><input type="text" name="username"> <br>  <br>
-        <b>Password: </b>&nbsp;<input type="password" name="password">  </p><br>
-	<p><button type="submit" style="background-color: teal;
-  border: none;
-  color: white;
-  padding: 8px 16px;
-  text-decoration: none;
-  margin: 4px 2px;
-  cursor: pointer;">Login/Register</button></p>
-    </form>
-</td>
-</tr>
-
 </table>
+
+<table  width="100%" >
+ <tr>
+     <td style="text-align:center; vertical-align:middle;"> <br><br>
+        <form action='/login/post' method="post">
+    	<p style="color:#EA5F25; font-style:normal; font-size:15px;">
+    	    <b>Username: </b><input type="text" name="username"> <br><br>
+            <b>Password: </b>&nbsp;<input type="password" name="password">  </p><br>
+    	<p><button type="submit" style="background-color: teal;   border: none;  color: white;
+         padding: 8px 16px;text-decoration: none; margin: 4px 2px; cursor: pointer;">
+          Login/Register</button></p>
+        </form>
+    </td></tr>
+ </table>
+
+ <div class="container" width="100%">
+  <div class="row" >
+
+    <div class="col-sm-6 col-md-4" ><b>What is study buddy?</b></div>
+    <div class="col-sm-6 col-md-4"><b>How to use study buddy?</b></div>
+    <div class="col-sm-6 col-md-4"><b>Why study buddy?</b></div>
+    <div class="col-sm-6 col-md-4">Study buddy is an online platform where students in ASRJC can help each other with academics.</div>
+    <div class="col-sm-6 col-md-4">Students can either choose to ask a question regarding one of their subjects or they can choose to answer a question from the question database.</div>
+    <div class="col-sm-6 col-md-4">Study buddy creates an efficient environment for clarifying doubts or revising by answering questions.By having an online platform to learn, it saves times for students and makes learning easier.</div>
+
+  </div>
+</div>
+
     {% endblock %}
 </body>
    </html>
-
-
