@@ -13,7 +13,7 @@ The idea is for students to interact with each other mainly to get help on diffe
 
 In the future, this can be extended by incorporating more features like:
 
-* Security to ensure only Anderson Junior College students can participate
+* Security to ensure only Anderson Serangoon Junior College students can participate
 * Notification to user who raised the question, when there are new answers
 * Change password 
 * Manage categories and limit them
