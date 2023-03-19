@@ -133,4 +133,4 @@ def catList(category):
     return render_template("index.html", topics=topics)
 
 
-app.run(debug=True)  # Run the app in mode debug (change to False otherwise)
+app.run(debug=False, port='81', host='0.0.0.0')  # Run the app with no debug mode
