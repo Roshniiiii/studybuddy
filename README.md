@@ -45,6 +45,6 @@ Reference for Python installation: https://realpython.com/installing-python/
 3. Run the main file:
 
 ```bash
-python3 app.py
+python app.py
 ```
 
