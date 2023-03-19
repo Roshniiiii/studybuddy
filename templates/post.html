@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+{% block content %}
+<style>
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+</style>
+
+<table  width="100%" >
+
+<tr>
+     <td width="100%">
+        <a target="_blank" href="https://asrjc.moe.edu.sg/" rel="noopener">
+            <img src="Logo-1.png" width="384" height="120" alt="" /></a>
+            &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <img src="study_buddy.png" height="100" />
+    </td>
+
+</tr>
+<tr>
+    <td width="100%" height="15" style="background-color:teal;" >
+
+    </td>
+
+</tr>
+</table>   <br>
+
+
+<table style="color:#EA5F25; font-style:normal; font-size:15px;" class="center">
+    <form action="/post/post" method="post">
+<tr >
+        <td >Title: </td>
+        <td v><input type="text" name="title" >  </td>
+</tr>
+<tr>
+	   <td>Category: </td>
+       <td align="left"><input type="text" name="category"> </td>
+
+</tr>
+<tr>
+        <td> Content: </td>
+        <td align="left"><textarea rows="10" cols="60" name="content" ></textarea> </td>
+</tr>
+<tr>
+		<td ></td>   <td>
+        <input type="submit" name="Create" style="background-color: teal;
+  border: none; color: white;  padding: 8px 16px; text-decoration: none; margin: 4px 2px;
+  cursor: pointer;" value="Create"/>
+
+        </td>
+</tr>
+
+</form>
+</table>
+      <br>
+</p>
+{% endblock %}
+

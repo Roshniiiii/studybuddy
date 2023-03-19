@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+{% block content %}
+
+<table  width="100%" >
+
+<tr>
+     <td width="100%">
+        <a target="_blank" href="https://asrjc.moe.edu.sg/" rel="noopener">
+            <img src="Logo-1.png" width="384" height="120" alt="" /></a>
+            &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <img src="study_buddy.png" height="100" />
+    </td>
+
+</tr>
+<tr>
+    <td width="100%" height="15" style="background-color:teal;" >
+
+    </td>
+
+</tr>
+</table>   <br>
+<div>
+	<div id="meta">
+		<div id="name">{{ topic.author }}</div>
+		<div id="time">{{ topic.date }}</div>
+	</div>
+	<div id="body">
+		{{ topic.content|safe }}
+		<a href="/like/{{ topic.id }}">{{ topic.likesNum }} likes</a>
+	</div>
+</div>
+
+{% for reply in replies %}
+<div>
+	<div id="meta">
+		<div id="name">{{ reply.author }}</div>
+		<div id="time">{{ reply.date }}</div>
+	</div>
+	<div id="body">
+		{{ reply.content|safe }}
+		<a href="/like/reply/{{ reply.id }}/{{ topic.id }}">{{ reply.likesNum }} likes</a>		
+	</div>
+</div>
+{% endfor %}
+<div id="reply">
+	<form action="/reply/{{ topic.id }}" method="post">
+		<textarea name="body" cols="100" rows="10"></textarea>
+        <p><button type="submit" style="background-color: teal;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;">Reply</button></p>
+	</form>
+</div> 
+{% endblock %}

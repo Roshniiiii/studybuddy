@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+
+{% block content %}
+<style>
+td {
+    text-align: center;
+}
+
+
+</style>
+
+<table  width="100%" >
+
+<tr>
+     <td width="100%">
+        <a target="_blank" href="https://asrjc.moe.edu.sg/" rel="noopener">
+            <img src="Logo-1.png" width="384" height="120" alt="" /></a>
+            &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <img src="study_buddy.png" height="100" />
+    </td>
+
+</tr>
+<tr>
+    <td width="100%" height="15" style="background-color:teal;" >
+
+    </td>
+
+</tr>
+
+</table>
+<ul>
+	<li><a href="/top">Top</a></li>
+	<li><a href="/new">New</a></li>
+	<!--li><a href="/cats">Categories</a></li>
+	<li><a href="/unread">Unread</a></li -->
+</ul>
+<a href="/post">Write a new topic</a>
+
+<table style="width:100%" cellspacing="3" bordercolor="teal">
+	<tr bordercolor="teal" bgcolor="teal">
+		<th style="color:white">Title</th>
+		<th style="color:white">Category</th>
+		<th style="color:white">Last Activity</th>
+		<th style="color:white">Author</th>
+		<th style="color:white">Replies</th>
+		<th style="color:white">Views</th>
+	</tr>
+	{% for topic in topics %}
+	<tr  >
+		<td><a href="/topic/{{ topic.id }}"><b>{{ topic.title }}</b></a></td>
+		<td><a href="/cat/{{ topic.category }}">{{ topic.category }}</a></td>
+		<td>{{ topic.lastActivity }}</td>
+		<td>{{ topic.author }}</td>
+		<td>{{ topic.repliesNum }}</td>
+		<td>{{ topic.views }}</td>
+	</tr>
+	{% endfor %}
+</table>
+
+{% endblock %}
