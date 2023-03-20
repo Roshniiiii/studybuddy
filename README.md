@@ -1,6 +1,6 @@
 # StudyBuddy Forum 
 
-This is a web application built in Flask framework in Python.
+This is a web application built in Flask framework in Python for ASRJC "Save the World" computing project.
 The idea is for students of asrjc to interact with each other on an online platform dedicated to making learning efficient. They can do this by either posting a question related to their lessons in asrjc or answering a question posted by other students in asrjc. This way, not only can students clarify their doubts quickly, they can also revise and help others at the same time by answering questions posted by other students.
 
 ## Features
@@ -22,9 +22,6 @@ In the future, this can be extended by incorporating more features like:
 ## Link to replit
 https://replit.com/@RoshniVittanala/studybuddy
 
-## Why I made it
-
-I made this forum as part of JC-1 Computing project "Save the World" to apply client side (HTML5) and server side (Python) concepts.
 
 ## How to build the source code
 
