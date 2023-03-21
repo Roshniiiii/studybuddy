@@ -22,6 +22,8 @@ In the future, this can be extended by incorporating more features like:
 ## Link to replit
 https://replit.com/@RoshniVittanala/studybuddy
 
+## Link to webapp
+https://studybuddy.roshnivittanala.repl.co/login
 
 ## How to build the source code
 
